@@ -11,7 +11,7 @@ module.exports = {
         // 出力先のファイル名
         filename: 'bundle.js',
         // 出力先のファイルパス
-        path: `${__dirname}/dest`,
+        path: `${__dirname}`,
     },
     module: {
       rules: [
@@ -41,8 +41,6 @@ module.exports = {
     },
     // 開発サーバの設定
     devServer: {
-        // destディレクトリの中身を表示してね、という設定
-        contentBase: 'dest',
     },
     plugins: [
       // make sure to include the plugin!
